@@ -1,3 +1,4 @@
+package SwitchCase;
 import java.util.*;
 
 public class Month {

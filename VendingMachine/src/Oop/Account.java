@@ -1,3 +1,4 @@
+package Oop;
 import java.util.Scanner;
 public class Account {
 	public String name;

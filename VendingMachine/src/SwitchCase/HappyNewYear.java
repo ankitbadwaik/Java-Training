@@ -1,3 +1,4 @@
+package SwitchCase;
 
 public class HappyNewYear {
 
