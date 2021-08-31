@@ -5,11 +5,13 @@ import java.util.Scanner;
 
 
 public class Employee {
-	public int empId;
-	public  String name;
-	public  double Salary;
+	 int empId;
+	 String name;
+	 double Salary;
+	
+	
 	  
-	 public void get(){
+	 public void getEmp(){
 		  Scanner sc=new Scanner(System.in);
 			System.out.println("Enter the Id");
 			empId=sc.nextInt();
@@ -17,7 +19,9 @@ public class Employee {
 			name=sc.next();
 			System.out.println("Enter the Salary");
 			Salary=sc.nextDouble();
+			
 	  }
+	 	
 	  
 	  
 	  
@@ -29,15 +33,21 @@ public class Employee {
 
 	public static void main(String[] args) {
 		Employee[] obj = new Employee[3] ;
-		 for(int i=0;i<3;i++)
-		 {
-			 obj[i]=new Employee();
-			 obj[i].get();
-		 }
-		 for(int i=0;i<3;i++)
-		 {
-			 obj[i].showData();
-		 }
+		int i;
+		 
+		 for(i=0;i<3;i++)
+			 obj[i] =  new Employee();   
+         for(i=0;i<3;i++)
+         {
+             System.out.print("\nEnter details of "+ (i+1) +" Employee\n");
+             obj[i].getEmp();
+         }
+         System.out.print("\n Details of Employees \n");
+         for(i=0;i<3;i++)
+             obj[i].showData();
+		
+		
+		
 	}
 
 }
